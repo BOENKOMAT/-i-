@@ -48,7 +48,7 @@ a:hover {
 	Размытие по y
 	Цвет тени 777*/
 	box-shadow: 3px 3px 3px 3px black;
-	transition: 3s;
+	transition: 1s;
 	opacity: 1;
 }
 
@@ -69,7 +69,7 @@ span {
 	padding: 10px 0;
 }
 .main2 {
-	background-color: black;
+	background-color: white;
 	display: flex;
 	width: 95%;
 	max-width: 1000px;
@@ -79,9 +79,9 @@ span {
 }
 
 .item {
-	max-height: 100%;
-	max-width: 100%;
-	width: calc(95vw / 2 /16 * 9);
+	max-height: 265px;
+	max-width: 490px;
+	width: calc(50% - 10px);
 	height: calc(95vw / 2 /16 * 9);
 	background-color: dodgerblue;
 	margin: 5px;
@@ -91,7 +91,16 @@ span {
 	background-size: cover;
 	margin: 5px;
 }
-.item img {
+.item2 {
+	max-height: 265px;
+	max-width: 490px;
+	width: 100%;
+	height: 100%;
+	background-color: dodgerblue;
+	margin: 5px;
+	opacity: 0.5;
+}
+.item2 img {
 	height: calc(95vw / 2 /16 * 9);
 	width: 100%;
 	margin: 5px;
@@ -104,7 +113,7 @@ span {
 	column-gap: 0;
 }
 .image {
-	display: inline-block;
+	display:block;
 	width: 100%;
 }
 .image + .image {
@@ -112,14 +121,28 @@ span {
 }
 
 .image-wrapper {
-	display: inline-block;
+	display: block;
+	z-index: 1;
 }
 
+.image {
+
+}
 .image-wrapper + .image-wrapper {
 	margin: 3px 0;
 }
-.main2 + .item {
-	display: inline-block;
 
+.image:hover {
+	transition: opacity 4s ease-in;
+
+	transform: scale(1.3) rotate(45deg);
+
+	z-index: 10; 
+	
+	filter: grayscale(10);
+}
+
+.main2 + .item2 {
+	display:inline-block;
 }
 /*464.047x
