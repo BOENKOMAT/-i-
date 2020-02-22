@@ -78,7 +78,7 @@ img.egor {
 	position: absolute;
 	width: 35%;
 	height: 35%;
-	margin-top: 15%;
+	margin-top: 5%;
 	margin-left: 20%;
 }
 
@@ -135,6 +135,14 @@ color: #727272;
 .znania {
 	background-color: #FFFFFF;
 	margin-left: 10%;
+}
+
+@media all and (max-width: 1150px){
+	.egor {
+		width: 200px !important;
+		height: 200px !important;
+	}
+
 }
 
 
